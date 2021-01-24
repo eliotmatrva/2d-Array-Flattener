@@ -1,0 +1,22 @@
+<HTML>
+<script>
+    const flatArray = [];
+    function arrayFlattener(array2D){
+        
+            for(let i = 0; i < array2D.length; i++){
+                if (array2D[i].length > 1){
+                    for (let k = 0; k < array2D[i].length; k++){
+                        flatArray.push(array2D[i][k]);
+                    }
+                }     
+                else{
+                    flatArray.push(array2D[i]);
+                }
+            }
+        return flatArray;
+    var myArray = [1,[1,2],3];
+    console.log(arrayFlattener(myArray));
+  }
+
+</script>
+</HTML>
